@@ -1,9 +1,40 @@
-h2{
-  text-align: center; 
+body, .default{
+  line-height: 1.5em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px;
+  color: rgb(65, 65, 110);
 }
-input{
-    border: 2px 8px;
+#enfasisColumnas{
+  margin: 45px;
+  width: 480px;
+  text-align: left;
+  border-collapse: collapse;
 }
-form{
-    border: 2px 8px;
+
+#enfasisColumnas caption{
+  font-size: 20px;
+}
+
+#enfasisColumnas th{
+  font-size: 14px;
+  font-weight: normal;
+  padding: 12px 15px;
+  color: #0d368a;
+}
+
+#enfasisColumnas td{
+  padding: 10px 15px;
+  color: rgb(92, 92, 143);
+  border-top: 1px solid #e0edff;
+
+}
+.columna{
+  background: #c1cdf5;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+}
+
+#enfasisColumnas tr:hover td{
+  color: #3e3eb8;
+  background: #d3d8ee;
 }
