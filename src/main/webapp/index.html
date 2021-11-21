@@ -5,11 +5,15 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Formulario de ejemplo HTM</title>
-        <link rel="stylesheet" type="text/css"" href="recursos/styles.css">
+        <link href="recursos/styles.css" rel="stylesheet" type="text/css"/>
         <script type="text/javascript" src="recursos/funciones.js"></script>
     </head>
     <body>
         <h2>Formulario Registro Datos</h2>
+        <!<!-- 
+        Metodo post para que los datos no se muestren en el link 
+        En action hago referencia a "Servlet", el cual el nombre que le di a mi Servlet
+        -->
         <form name="fom1" action="Servlet" method="post" autocomplete="off" onsubmit="return validarForma(this)">
             <input type="hidden" name="oculto" value="valorOculto"></input>
             <table width="200" id="enfasisColumnas">
@@ -21,7 +25,7 @@
                         Usuario (*)
                     </td>
                     <td>
-                        <input class="default" type="text" name="user" placeholder="Escribe tu nombre" onfocus="this.select()"/>
+                        <input class="default" type="text" name="user" value="Escribe tu nombre" onfocus="this.select()"/>
                     </td>
                 </tr>
                 <tr>
