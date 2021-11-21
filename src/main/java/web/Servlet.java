@@ -20,8 +20,8 @@ public class Servlet extends HttpServlet{
         String user = request.getParameter("user");
         String password = request.getParameter("password");
         String tecnologias[] = request.getParameterValues("tecnologias");
-        String genero = request.getParameter("ocupacion");
-        String ocupacion = request.getParameter("genero");
+        String genero = request.getParameter("genero");
+        String ocupacion = request.getParameter("ocupacion");
         String musica[] = request.getParameterValues("musica");
         String comentario = request.getParameter("comentario");
         
